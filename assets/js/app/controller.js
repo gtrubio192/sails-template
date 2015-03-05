@@ -10,3 +10,15 @@ angular.module('controllers', [])
 .controller('registerCtrl', function($scope){
     
 })
+.controller('dashboardCtrl', function($scope, $http){
+    $scope.assignments = [];
+    
+    $http.get('/assignment?sort=id DESC')
+    .success(function(assignments){
+        $scope.assignments = assignments;
+    })
+    .error(function(err){
+        console.log('err');
+        console.log(err);
+    });
+});

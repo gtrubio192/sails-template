@@ -1,5 +1,15 @@
 this["JST"] = this["JST"] || {};
 
+this["JST"]["assets/templates/dashboard.html"] = function(obj) {
+obj || (obj = {});
+var __t, __p = '', __e = _.escape;
+with (obj) {
+__p += '<p>Dashboard</p>\n<div ng-repeat="assignment in assignments">\n    <div>{{assignment.name}}</div>\n    <a ng-href="{{assignment.name}}">Assignment Link</a>\n    <div>{{assignment.date}}</div>\n</div>\n';
+
+}
+return __p
+};
+
 this["JST"]["assets/templates/home.html"] = function(obj) {
 obj || (obj = {});
 var __t, __p = '', __e = _.escape;

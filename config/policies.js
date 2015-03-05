@@ -19,8 +19,11 @@
 
 module.exports.policies = {
 
-  '*': [ 'passport' ]
-
+  '*': [ 'passport' ],
+  
+  AssignmentController: {
+    '*': [ 'sessionAuth' ]
+    }
   /***************************************************************************
   *                                                                          *
   * Default policy for all controllers and actions (`true` allows public     *

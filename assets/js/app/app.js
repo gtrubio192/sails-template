@@ -15,6 +15,11 @@ angular.module('app', ['controllers', 'ui.router'])
         url:'/register',
         templateUrl: 'templates/register.html',
         controller: 'registerCtrl'
+    })
+    .state('dashbaord', {
+        url:'/dashboard',
+        templateUrl: 'templates/dashboard.html',
+        controller: 'dashboardCtrl'
     });
     
 })

@@ -1,12 +1,11 @@
 <section ng-control="loginCtrl">
-    <div class="login">
-        <nav><h1>Login</h1></nav>
-        <div>
-            <input ng-change="userValidation()" ng-model="userName" type="text" placeholder="Username">
-        </div>
-        <div>
-            <input ng-change="passValidation()" ng-model="password" type="password" placeholder="Password">
-        </div>
-        <button type="submit" ng-click="validation()">Login</button>
+    <nav><h1>Login</h1></nav>
+    <div>
+        <input ng-model="userName" type="text" placeholder="Username">
+    </div>
+    <br>
+    <br>
+    <div>
+        <input ng-model="password" type="text" placeholder="Password">
     </div>
 </section>
