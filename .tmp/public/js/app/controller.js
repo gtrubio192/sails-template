@@ -4,7 +4,9 @@ angular.module('controllers', [])
 })
 .controller('loginCtrl', function($scope){
     
-      validator.isEmail('$scope.userName'); //=> true
+      if(validator.isEmail('$scope.userName')){
+          
+      }
 
 })
 .controller('registerCtrl', function($scope){
