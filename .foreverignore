@@ -2,4 +2,9 @@
 **/views/**
 **/assets/**
 **/.sass-cache/**
+<<<<<<< HEAD
 
+=======
+**bower.json**
+**/.git/**
+>>>>>>> 30ae2442fdadcc831531a40c57b7172e5b0f782a
